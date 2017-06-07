@@ -1,0 +1,65 @@
+html, body {
+    font-family: "Century Gothic", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#loginForm h1 {
+    /*font-family: 'Rajdhani', sans-serif;*/
+    /*font-family: 'Grand Hotel', cursive;*/ /*Velma*/
+    /*font-family: 'Nunito', sans-serif;*/
+    font-family: 'Pompiere', cursive;
+    color: grey;
+    font-size: 6em;
+    text-align: center;
+}
+
+#username, #password {
+    width: 200px;
+    margin-bottom: 5px;
+    text-align: right;
+    height: 30px;
+    padding-right: 5px;
+}
+
+#login_button {
+    width: 75px;
+    height: 25px;
+    background-color: #6c9ae2;
+    color: white;
+    border: 0;
+}
+
+#loginForm {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: 20% 32%;
+}
+
+#login-block {
+    position: relative;
+    margin: -15px auto;
+    padding-right: 29%;
+    padding-top: 0;
+}
+
+#error_invalid{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: center;
+    color: blue;
+    font-size: small;
+}
+
+/* webkit solution */
+::-webkit-input-placeholder {
+    text-align: right;
+}
+
+/* mozilla solution */
+:-moz-placeholder {
+    direction: rtl;
+}

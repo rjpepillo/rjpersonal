@@ -1,0 +1,17 @@
+{
+  "development": {
+    "apiBase": "http://localhost:8080/api",
+    "version": "1.0.0",
+    "build": "13"
+  },
+  "production": {
+    "apiBase": "",
+    "version": "1.0.0",
+    "build": "13"
+  },
+  "testing": {
+    "apiBase": "http://isecure-win2k12:8080/api",
+    "version": "1.0.0",
+    "build": "13"
+  }
+}

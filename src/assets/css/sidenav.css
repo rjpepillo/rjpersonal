@@ -1,0 +1,35 @@
+md-sidenav.md-locked-open.sidebar,
+md-sidenav.md-locked-open-remove.md-closed.sidebar,
+md-sidenav.md-locked-open.md-closed.sidebar {
+  width: 230px !important;
+  /*min-width: 280px !important;
+    max-width: 900px !important;*/
+  height: 100%;
+  position: fixed;
+  transition: margin 350ms ease-out;
+  margin-left: -190px;
+  z-index: 10;
+}
+
+md-sidenav.md-locked-open.sidebar:hover,
+md-sidenav.md-locked-open-remove.md-closed.sidebar:hover,
+md-sidenav.md-locked-open.md-closed.sidebar:hover {
+  margin-left: 0;
+}
+
+md-sidenav.md-locked-open.sidebar.sidebar-item-icon {
+  /*min-height: 20px;*/
+}
+
+.main {
+  position: absolute;
+  /*margin-top:50px;
+  height: calc(100% - 50px);
+  width: calc(100% - 30px);
+  margin-left: 34px;*/
+  float: right;
+}
+
+.top-filler{
+  margin: 4px auto;
+}

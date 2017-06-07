@@ -1,0 +1,37 @@
+<!--suppress ALL -->
+<div class="i-need-some-space">
+</div>
+<div class="i-need-space">
+</div>
+
+<div layout="row" layout-xs="column" layout-align="center center">
+  <span flex="5"></span>
+  <div flex layout="row" layout-align="center center">
+    <h1 class="header no-margin">I love...</h1>
+  </div>
+  <span flex="5"></span>
+</div>
+
+<div class="content" layout="column" layout-align="start center">
+  <div id="slides">
+    <div ng-repeat="interest in detailsCtrl.interests" class="slide"
+         layout="column" layout-align="center center" ng-cloak>
+      <div layout="row" layout-align="center center">
+        <img src="{{interest.image}}">
+      </div>
+      <div layout="row" layout-align="center center">
+        <h3 class="no-margin no-padding">{{interest.label.toUpperCase()}}</h3>
+      </div>
+    </div>
+  </div>
+  <div>
+    <md-button class="md-fab md-accent controls material-icons" id="previous" ng-click="detailsCtrl.previousSlide()">
+      keyboard_arrow_left
+    </md-button>
+    <md-button class="md-fab md-accent controls material-icons" id="next" ng-click="detailsCtrl.nextSlide()">
+      keyboard_arrow_right
+    </md-button>
+  </div>
+</div>
+<div class="i-need-space">
+</div>

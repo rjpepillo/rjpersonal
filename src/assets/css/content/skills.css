@@ -1,0 +1,127 @@
+.skillsSection {
+  background-color: black;
+  color: white;
+}
+
+.skillsSection .header {
+ /*font-family: 'Pacifico', cursive;*/
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.5em;
+}
+
+.skill-set {
+  max-width: 29em;
+  /*display: -webkit-inline-box;*/
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.skill {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(90%);
+  background: #565656;
+  /**width: 2.5em;
+  height: 2.5em;*/
+  font-size: 2.5em;
+  text-decoration: none;
+  color: #838383;
+  text-align: center;
+ /* position: relative;*/
+  overflow: hidden;
+  /*margin: 0.065em;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all .4s ease-out;
+  /*transition: all .25s ease-out;*/
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+  transition: 0.25s;
+}
+
+.skill img {
+  width: 40%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.skill:hover img {
+  width: 35%;
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.skill:hover, .skill:focus, .skill:active {
+  background: #4CA2FC;
+  -webkit-filter: grayscale(0);
+  filter: none;
+  color: #fff;
+  z-index: 1;
+  box-shadow: 0 0 1.125em 0 rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.skill:hover:after, .skill:focus:after, .skill:active:after {
+  bottom: 5%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.skill:after {
+  bottom: -4em;
+  text-shadow: 1px 1px 5px #0e2231;
+  z-index: 1;
+  content: attr(skill-name);
+  width: 100%;
+  text-align: center;
+  left: 0;
+  color: white;
+  font-size: 50%;
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.skill md-grid-tile-footer {
+  display: none;
+}
+
+.skillsSection .gray {
+  background: #f5f5f5; }
+
+.skillsSection .green {
+  background: #b9f6ca; }
+
+.skillsSection .yellow {
+  background: #ffff8d; }
+
+.skillsSection .blue {
+  background: #84ffff; }
+
+.skillsSection .darkBlue {
+  background: #80d8ff; }
+
+.skillsSection .deepBlue {
+  background: #448aff; }
+
+.skillsSection .purple {
+  background: #b388ff; }
+
+.skillsSection .lightPurple {
+  background: #8c9eff; }
+
+.skillsSection .red {
+  background: #ff8a80; }
+
+.skillsSection .pink {
+  background: #ff80ab; }

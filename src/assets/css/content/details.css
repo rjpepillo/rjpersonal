@@ -1,0 +1,47 @@
+.detailsSection .header {
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.5em;
+}
+
+.detailsSection #slides {
+  position: relative;
+  height: 20vw;
+  width: 50vw;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.detailsSection .slide {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.5em;
+  /*background-color: red;*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.detailsSection .showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.detailsSection .showing h3{
+  text-align: center;
+}
+
+.detailsSection .showing img{
+  height: 10vw;
+}
+
+.detailsSection .controls {
+  border-radius: 50%;
+}

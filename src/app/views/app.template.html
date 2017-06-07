@@ -1,0 +1,41 @@
+<div layout="row">
+  <div layout="column" style="width: 100vw">
+    <md-toolbar id="navBar" layout="row" layout-xs="column"
+                layout-align="space-between center"
+                class="md-whiteframe-z3"
+                style="height:40px;padding:0;padding-left:50px; margin:0;position:fixed;z-index:20;
+                background-color: black; color:white">
+      <div flex>
+        <!-- <h2>Ram Pepillo</h2>-->
+      </div>
+      <span flex></span>
+      <div layout="row" layout-align="space-between right">
+        <md-button class="nav-link" ng-repeat="item in mainFrameCtrl.navBarItems"
+                   ng-class="item.selected ? 'nav-selected' : '' "
+                   ng-click="mainFrameCtrl.selectNavItem(item)"
+                   ng-bind="item.name">
+        </md-button>
+      </div>
+      <span flex="5" hide-xs>
+        <!-- filler-->
+      </span>
+    </md-toolbar>
+
+    <div class="main" layout="column" flex>
+      <div flex layout="column">
+        <div layout class="content no-margin">
+          <ui-view class="overflow-hidden"></ui-view>
+        </div>
+        <div rj-footer flex class="footer" layout="row" layout-align="center start"></div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="section-buttons" layout="column">
+  <md-button class="md-raised" ng-click="mainFrameCtrl.moveDown()">Up</md-button>
+  <md-button class="md-raised">Down</md-button>
+</div>
+

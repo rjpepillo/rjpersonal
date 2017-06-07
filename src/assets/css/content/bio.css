@@ -1,0 +1,46 @@
+.bio-cover {
+  width: 100vw;
+  height: 71vw;
+  float: right;
+  position: relative;
+  left:-10px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-image: url("../../../assets/images/cover/cover1.JPG");
+  -o-background-size: cover, auto;
+  -moz-background-size: cover, auto;
+  -webkit-background-size: cover, auto;
+}
+
+.bio-cover {
+  color: white;
+  text-shadow:
+    1px 1px 7px #656565;
+
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3em;
+  cursor: default;
+}
+
+.bio h1,
+.bio h2,
+.bio h3,
+.bio h4,
+.bio h5,
+.bio h6 {
+  margin: 0 auto !important;
+  text-align: center;
+}
+
+
+.my-name {
+  font-weight: 900;
+}
+
+.not-my-name {
+  font-weight: 500;
+}
+

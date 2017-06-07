@@ -1,0 +1,254 @@
+html, body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+md-content {
+  height: 100%;
+  background-color: transparent;
+}
+
+#searchButton:hover {
+  transform: scale(1.2);
+}
+
+.p {
+  font-family: "Quicksand", sans-serif;
+}
+.main {
+  background-color: transparent;
+  font-size: 1.25em;
+}
+
+.main .fullpage {
+  padding: 50px /*3.25em*/ 0 0 !important;
+}
+
+.white {
+  color: white !important;
+}
+
+.opacity-80 {
+  opacity: 0.8 !important;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+tr.middle-center > td, .middle-center {
+  vertical-align: middle;
+  text-align: center;
+}
+
+li > a {
+  cursor: pointer;
+}
+
+button:focus, button:active, input:focus, input:active {
+  outline: 0 !important;
+}
+
+#filterPanel {
+  width: 100%;
+  height: 1.6em;
+  background-color: darkgrey;
+}
+
+#filterPanel > div {
+  position: relative;
+  left: 10%;
+  width: 800px;
+  height: inherit;
+}
+
+#filterPanel #arrivalTimePicker {
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: middle;
+  line-height: 0;
+  padding: 0;
+}
+
+#filterPanel input {
+  height: 1.25em;
+  margin: 0 auto;
+  vertical-align: middle;
+  padding: 10px 2px;
+  font-size: 0.9em;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: normal;
+}
+
+md-sidenav, md-sidenav md-content {
+  background-color: black;
+  color: white;
+}
+
+.bg-whitesmoke {
+  background-color: whitesmoke;
+}
+
+.no-top-margin {
+  margin-top: 0 !important;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+.no-margin {
+  margin: 0 0 0 0 !important;
+}
+
+.no-padding {
+  padding: 0 0 0 0 !important;
+}
+
+.btm-pad-5 {
+  padding-bottom: 5px !important;
+}
+
+.top-pad-10 {
+  padding-top: 10px !important;
+}
+
+.all-pad-5 {
+  padding: 5px 5px !important;
+}
+
+.all-pad-20 {
+  padding: 20px !important;
+}
+
+.vertical-pad-10 {
+  padding: 10px 0 !important;
+}
+
+.vertical-margin-26 {
+  margin: 25.5px 0 !important;
+}
+
+.indent-10 {
+  padding-left: 10px !important;
+}
+
+.indent-20 {
+  padding-left: 20px !important;
+}
+
+.indent-30 {
+  padding-left: 30px !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.page-header {
+  margin-top: 10px;
+}
+
+table[md-table] .md-column {
+  font-size: 0.95em !important;
+}
+
+table[md-table] .md-row {
+  outline: none !important;
+}
+
+table[md-table] .md-cell {
+  font-size: 0.8em !important;
+}
+
+/* https://github.com/angular/material/issues/1376 */
+.md-input[type=password]:-webkit-autofill ~ label:not(.md-no-float) {
+  transform: translate3d(0, 6px, 0) scale(0.75);
+  transition: transform cubic-bezier(0.25, 0.8, 0.25, 1) 0.4s, width cubic-bezier(0.25, 0.8, 0.25, 1) 0.4s;
+  width: calc((100% - 18px) / 0.75);
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.thumbnail-photo-container {
+  background: url('../../assets/images/no_img_available.png');
+}
+
+#customFieldListContent table[md-table] .default .md-checkbox-column,
+#customFieldListContent table[md-table] .default .md-checkbox-cell {
+  display: none;
+}
+
+thead.disable-select-all > tr > th > md-checkbox {
+  display: none;
+}
+
+.light-grey {
+  background-color: #F2F2F2;
+}
+
+.search-input {
+  border-radius: 5px;
+  -webkit-text-fill-color: initial;
+  padding-left: 10px !important;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.search-input ::-webkit-input-placeholder {
+  color: white !important;
+  text-align: left;
+  padding-left: 10px;
+  opacity: 0.4;
+}
+
+.search-input :-moz-placeholder {
+  color: white !important;
+  text-align: left;
+  padding-left: 10px;
+  opacity: 0.4;
+}
+
+.search-input ::-moz-placeholder {
+  color: white !important;
+  text-align: left;
+  padding-left: 10px;
+  opacity: 0.4;
+}
+
+.search-input :-ms-input-placeholder {
+  color: white !important;
+  text-align: left;
+  padding-left: 10px;
+  opacity: 0.4;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/*noinspection CssOptimizeSimilarProperties*/
+.border-white {
+  border: solid;
+  border-color: white !important;
+  border-width: 2px !important;
+}
+
+.bold {
+  font-weight: 900;
+}

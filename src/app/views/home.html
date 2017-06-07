@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="iSecureMain">
+<head lang="en">
+  <title>iSecure</title>
+  <!-- bower:css -->
+  <!-- endbower -->
+
+  <!-- inject:css -->
+  <!-- endinject -->
+
+</head>
+<body>
+<!--<div id="iSecure-logo">
+    &lt;!&ndash;<img src="../images/yeoman.png">&ndash;&gt;
+<h2>iSecure</h2>
+</div>-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div id="header" class="container-fluid">
+    <div class="col-md-2">
+      <div class="nav navbar-header">
+        <span id="brandName" class="navbar-brand">iSecure</span>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div id="navcol-1" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active" role="presentation">
+            <a href="#">Tenants</a>
+          </li>
+          <li class="" role="presentation">
+            <a href="#">Users</a>
+          </li>
+          <!--<li class="nav navbar-text">iSecure</li>-->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <form class="navbar-form navbar-left" target="_self">
+              <div class="form-group">
+                <label class="control-label" for="searchBox"></label>
+                <input id="searchBox" class="form-control search-field" placeholder="Search..."
+                       name="search"
+                       type="search">
+              </div>
+              <!--<i class="glyphicon glyphicon-search"></i>-->
+              <button id="searchButton" class="glyphicon glyphicon-search white"></button>
+            </form>
+          </li>
+          <li class="dropdown" uib-dropdown="">
+            <a uib-dropdown-toggle class="dropdown-toggle" data-toggle="dropdown">Admin<b
+              class="caret"></b></a>
+            <!--<ul uib-dropdown-menu class="dropdown-menu-left">
+                <li><a ui-sref="a">Profile</a></li>
+                <li><a ui-sref="">Logout</a></li>
+            </ul>-->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-inverse sidebar" role="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="top-filler"></li>
+        <li class="active"><a href="#/scheduler">Scheduler
+          <span class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a>
+        </li>
+        <li><a href="#/checkin">Check-in
+          <span class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a>
+        </li>
+        <li><a href="#/scheduler">Check-out
+          <span class="pull-right hidden-xs showopacity glyphicon glyphicon-tags"></span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main">
+  <ui-view></ui-view>
+</div>
+
+<!-- bower:js -->
+<!-- endbower -->
+
+<!-- inject:js -->
+<!-- endinject -->
+
+</body>
+</html>

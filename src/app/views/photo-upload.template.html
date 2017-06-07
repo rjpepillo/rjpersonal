@@ -1,0 +1,61 @@
+<div class="all-pad-20">
+  <form name="uploadPhotoForm">
+    <div layout="column">
+      <div class="btm-pad-5">
+        <md-button class="md-raised" ngf-select ng-model="photoUploadCtrl.data.selected"
+                   ng-click="photoUploadCtrl.clearFields()"
+                   ngf-max-size="10MB"
+                   accept=".jpg, .png, .jpeg">
+          Select Picture
+        </md-button>
+      </div>
+      <div layout="row">
+        <div flex="60">
+          <div ngf-drop
+               ng-model="photoUploadCtrl.data.selected"
+               ngf-pattern=".jpg, .png, .jpeg"
+               ngf-accept=".jpg, .png, .jpeg"
+               class="cropArea"
+               flex="100">
+            <img-crop id="selectedPhoto"
+                      image="photoUploadCtrl.data.selected  | ngfDataUrl"
+                      result-image="photoUploadCtrl.data.imgToCrop"
+                      area-min-size="150"
+                      result-image-size="250"
+                      change-on-fly="true"
+                      ng-init="photoUploadCtrl.data.imgToCrop=''">
+            </img-crop>
+          </div>
+        </div>
+
+        <div layout-align="center start" flex="40" class="indent-10">
+          Preview:
+          <img ng-src="{{photoUploadCtrl.data.imgToCrop}}"/>
+        </div>
+      </div>
+      <div flex layout="row" layout-align="center center">
+        <div flex="100" layout="column" layout-align="center">
+          <div flex="100">
+            <div flex layout="row" layout-align="space-between center" class="top-pad-10">
+              <span flex="40" class="text-red-600">{{photoUploadCtrl.errorMessage}}</span>
+              <div flex="20" layout="column" layout-align="center center" ng-init="photoUploadCtrl.isValid=false">
+                <md-button class="md-raised"
+                           ng-disabled="!photoUploadCtrl.isValid"
+                           ng-click="photoUploadCtrl.upload(photoUploadCtrl.data.imgToCrop, photoUploadCtrl.data.selected.name)">
+                  Submit
+                </md-button>
+              </div>
+              <span flex="40"></span>
+            </div>
+          </div>
+          <div flex>
+          <span class="progress" ng-show="progress >= 0">
+                <div style="width:{{photoUploadCtrl.progress}}%" ng-bind="progress + '%'"></div>
+              </span>
+            <span ng-show="result">Upload Successful</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

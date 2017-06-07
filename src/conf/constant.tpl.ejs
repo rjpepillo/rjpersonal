@@ -1,0 +1,21 @@
+
+/// <reference path="../../typings/index.d.ts" />
+
+
+module App {
+
+  export interface IConstants {<% constants.forEach(function(constant) {%>
+    <%= constant.name.replace(/"/g, "'") %>: string;<% }) %>
+  }
+
+  export class Constants {
+    static get Default(): any {
+      return {<% constants.forEach(function(constant) {%>
+        <%= constant.name.replace(/"/g, "'") %>: <%= constant.value.replace(/"/g, "'")%>,<% }) %>
+      };
+    }
+  }
+
+  angular.module('App').constant('AppConfiguration', Constants.Default);
+
+}

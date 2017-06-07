@@ -1,0 +1,52 @@
+<div layout="row" layout-xs="column" layout-align="center center" class="page-header">
+  <span flex="5"></span>
+  <div flex layout="row" layout-align="center center">
+    <h1 class="no-margin header">What have I been up to?</h1>
+  </div>
+  <span flex="5"></span>
+</div>
+
+<div class="i-need-some-space"></div>
+<md-content class="content" id="experienceContent"
+            layout="row" layout-align="center start" ng-cloak>
+  <span flex></span>
+  <div flex="80" layout="column">
+    <md-content ng-repeat="company in expCtrl.companies" layout="row" layout-align="center start"
+                class="i-need-space" flex>
+      <div layout="column" layout-align="center center" flex="20" class="company-image-wrapper"
+           style="background-color: {{company.image.bgColor}}">
+        <img src="{{company.image.src}}" class="company-image">
+      </div>
+      <div class="filler-column">
+      </div>
+      <div layout="column" flex="60">
+        <div layout="row" layout-align="start center">
+          <h2 ng-bind="company.name" class="bold no-bottom-margin no-top-margin company-name"></h2>
+          <div layout="column" layout-align="center end">
+            <div>
+              <a onclick="window.open(this.href,'_blank'); return false;" href="http://{{company.link}}"
+                 ng-if="company.link">
+                <img src="../../../assets/images/links-icon.png" class="link">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div ng-bind="company.date" class="i-need-some-space"></div>
+
+        <div ng-repeat="position in company.positions" layout="column" class="i-need-some-space">
+          <div layout="row" layout-align="start none" layout-wrap>
+            <div ng-bind="position.name" class="position-name"></div>
+            <div class="filler-column"></div>
+            <div flex="noshrink" ng-bind="position.date"></div>
+          </div>
+          <div ng-if="position.sub" class="sub-info" ng-bind="position.sub">
+          </div>
+          <div class="description" ng-bind="position.description"></div>
+        </div>
+
+      </div>
+    </md-content>
+  </div>
+  <span flex></span>
+</md-content>
